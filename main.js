@@ -1,4 +1,4 @@
-const NEW_YEAR = moment('20180101 00:00:00', 'YYYYMMDD h:mm:s')
+const NEW_YEAR = moment('20190101 00:00:00', 'YYYYMMDD h:mm:s')
 const SONG_START = 24
 
 const date = {
