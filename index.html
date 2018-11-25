@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Marolio le da sabor a tu año</title>
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
-
-  <body>
-    <div id="app"></div>
-    <script src="./src/main.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marolio le da sabor a tu año</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app" :style="{backgroundImage: `url(${stepImage})`}">
+    <div v-if="finished">Felíz año nuevo!1!!!</div>
+    <div v-else>{{formatedCountdown}}</div>
+    <audio ref="audio" src="./assets/theme.mp3"></audio>
+  </div>
+  <script src="./vendors/vue.js"></script>
+  <script src="./vendors/moment.js"></script>
+  <script src="./main.js"></script>
+</body>
 </html>
